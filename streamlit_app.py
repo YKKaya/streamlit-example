@@ -38,7 +38,7 @@ def merge_additional_info(portfolio, tickers):
         return None
 
 # Title and Description
-st.title("S&P 500 Analysis")
+st.title("SP 500 Analysis")
 st.write("")
 
 # URL for fetching S&P 500 companies data
