@@ -39,8 +39,7 @@ def merge_additional_info(portfolio, tickers):
 
 # Title and Description
 st.title("S&P 500 Analysis")
-st.write('''An interactive analysis of S&P 500 companies, allowing users to view historical stock data, returns, and additional company information.
-''')
+st.write("")
 
 # URL for fetching S&P 500 companies data
 url = 'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'
