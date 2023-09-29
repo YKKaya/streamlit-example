@@ -1,3 +1,8 @@
+# Importing required libraries
+import streamlit as st
+import pandas as pd
+import yfinance as yf
+
 # Function to fetch S&P 500 data
 def fetch_sp500_data(url):
     try:
@@ -38,17 +43,10 @@ def merge_additional_info(portfolio, tickers):
         return None
 
 # Title and Description
-def main():
-    st.title("S&P 500 Analysis")
-    st.write("""
-    An interactive analysis of S&P 500 companies, allowing users to view historical stock data, returns, and additional company information.
-    """)
-
-    st.write("This is a test to ensure Streamlit is functioning properly.")
-
-# Main execution
-if __name__ == "__main__":
-    main()
+st.title("S&P 500 Analysis")
+st.write("""
+An interactive analysis of S&P 500 companies, allowing users to view historical stock data, returns, and additional company information.
+""")
 
 # URL for fetching S&P 500 companies data
 url = 'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'
